@@ -11,6 +11,9 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Nav } from "../components/portfolio/Nav";
+import { Footer } from "../components/portfolio/Footer";
+import { MatrixRain } from "../components/portfolio/MatrixRain";
 
 function NotFoundComponent() {
   return (
@@ -77,14 +80,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Afaq Tahir — Networking & Cybersecurity Engineer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Afaq Tahir — entry-level network & systems engineer with CEH and CCNA, building toward cloud networking and cloud security.",
+      },
+      { name: "author", content: "Afaq Tahir" },
+      { name: "theme-color", content: "#00ff9c" },
+      { property: "og:title", content: "Afaq Tahir — Networking & Cybersecurity Engineer" },
+      {
+        property: "og:description",
+        content:
+          "CEH · CCNA · Cloud foundations. Portfolio, projects and certifications.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:url", content: "https://afaqt.me" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
@@ -118,8 +130,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <MatrixRain />
+      <div className="relative flex min-h-screen flex-col">
+        <Nav />
+        <main className="flex-1">
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </QueryClientProvider>
   );
 }
