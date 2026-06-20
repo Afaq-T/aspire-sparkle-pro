@@ -13,7 +13,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "../components/portfolio/Nav";
 import { Footer } from "../components/portfolio/Footer";
-import { MatrixRain } from "../components/portfolio/MatrixRain";
+import ParticleBackground from "../components/ParticleBackground";
 
 function NotFoundComponent() {
   return (
@@ -136,7 +136,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <MatrixRain />
+      <ParticleBackground />
       <div className="relative flex min-h-screen flex-col">
         <Nav />
         <main className="flex-1">

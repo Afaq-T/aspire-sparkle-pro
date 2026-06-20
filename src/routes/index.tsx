@@ -170,7 +170,7 @@ function PortraitCard() {
 
           <div className="relative mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-full border-2 border-neon/60 shadow-[0_0_40px_color-mix(in_oklab,var(--neon)_35%,transparent)]">
             <img
-              src={profile.portraitUrl}
+              src="/afaq-portrait.jpg"
               alt={`${profile.name} portrait`}
               className="h-full w-full object-cover"
               loading="eager"

@@ -97,7 +97,7 @@ export const projects = [
       "Configured static routes across three subnets with consistent VLSM plan",
       "Verified end-to-end reachability with ping/traceroute and CLI sweeps",
     ],
-    repo: "https://github.com/Afaq-T",
+    repo: "https://github.com/Afaq-T/CISCO_Packet_Tracer_Projects",
   },
   {
     slug: "pentest-lab",
