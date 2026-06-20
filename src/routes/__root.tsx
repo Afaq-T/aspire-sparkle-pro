@@ -97,6 +97,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://afaqt.me" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Afaq Tahir — Networking & Cybersecurity Engineer" },
+      { name: "description", content: "Pro Network Portfolio is a professional web-based application designed to showcase your technical skills and career aspirations." },
+      { property: "og:description", content: "Pro Network Portfolio is a professional web-based application designed to showcase your technical skills and career aspirations." },
+      { name: "twitter:description", content: "Pro Network Portfolio is a professional web-based application designed to showcase your technical skills and career aspirations." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3bbf45c9-382d-4d2d-b043-9a5b44fbc87b/id-preview-a6732317--86bb8868-f145-4eb9-b88c-5c3baf563fda.lovable.app-1781889572410.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3bbf45c9-382d-4d2d-b043-9a5b44fbc87b/id-preview-a6732317--86bb8868-f145-4eb9-b88c-5c3baf563fda.lovable.app-1781889572410.png" },
     ],
     links: [
       {
